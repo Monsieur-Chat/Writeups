@@ -3,7 +3,7 @@ TryHackMe | DNS in Detail | Writeup
 TryHackMe - DNS in Detail - Writeup
 [DNS in Detail](https://tryhackme.com/room/dnsindetail) est une room crée par [adamtlangley](https://tryhackme.com/p/adamtlangley).
 
-Answers/Flags :
+Réponse/Flags :
 ---
 ### Qu'est-ce qu'un DNS ?
 
