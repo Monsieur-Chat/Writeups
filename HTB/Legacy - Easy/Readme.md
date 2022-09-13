@@ -20,6 +20,8 @@ Cherchons sur exploitdb “CVE-2008-4250” et nous arrivons sur cette page. On 
 
 Cherchons donc “MS08-067” dans metasploit. Bingo, on y trouve un exploit !
 
+test
+
 # 2. **Gaining Access**
 
 Une fois l’exploit paramétré avec les valeurs RHOST (IP de la cible) et LHOST (IP de notre interface tun0), lançons l’exploit pour vérifier si la machine est vulnérable.
