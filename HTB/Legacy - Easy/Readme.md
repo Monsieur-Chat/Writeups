@@ -20,7 +20,6 @@ Cherchons sur exploitdb “CVE-2008-4250” et nous arrivons sur cette page. On 
 
 Cherchons donc “MS08-067” dans metasploit. Bingo, on y trouve un exploit !
 
-test
 
 # 2. **Gaining Access**
 
