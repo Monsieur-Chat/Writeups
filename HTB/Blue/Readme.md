@@ -1,6 +1,6 @@
-# Blue - Eternal Blue
+# Blue - Easy
 
-Une petite box des plus simple utilisant une exploitation de la CVE 2017-0144 (Eternal Blue), je vais expliquer ici comment j’ai réussi cette box.
+Une petite box des plus simple utilisant une exploitation de la CVE 2017-0144 (Eternal Blue), je vais expliquer ici comment j’ai réussi cette box en utilisant metasploit.
 
 # 1. Reconning
 
