@@ -19,7 +19,7 @@ Effectivement on peut observer ici que Tomcat tourne sur le port 8080 allons voi
 
 ![Untitled](src/Untitled%202.png)
 
-On observe un button inintéressant essayons de cliquer sur “manager app”.
+On observe un button intéressant essayons de cliquer sur “manager app”.
 
 ![Untitled](src/Untitled%203.png)
 
