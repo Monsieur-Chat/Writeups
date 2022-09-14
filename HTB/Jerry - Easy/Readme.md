@@ -4,7 +4,7 @@ Une autre box windows, ici nous allons essayer de réussir à exploiter une faib
 
 # 1. Reconning
 
-![Untitled](Jsrc/Untitled.png)
+![Untitled](src/Untitled.png)
 
 Comme nous pouvons observer ici les tags de la machines nous donne encore une fois des pistes : 
 
@@ -13,15 +13,15 @@ Comme nous pouvons observer ici les tags de la machines nous donne encore une fo
 
 Lançons tout d’abord nmap pour essayer de récupérer des informations plus précise.
 
-![Untitled](Jsrc/Untitled%201.png)
+![Untitled](src/Untitled%201.png)
 
 Effectivement on peut observer ici que Tomcat tourne sur le port 8080 allons voir ce que c’est dans le navigateur.
 
-![Untitled](Jsrc/Untitled%202.png)
+![Untitled](src/Untitled%202.png)
 
 On observe un button inintéressant essayons de cliquer sur “manager app”.
 
-![Untitled](Jsrc/Untitled%203.png)
+![Untitled](src/Untitled%203.png)
 
 Et forcément in formulaire de login, mais comme nous pouvons le voir cette page laisse penser que l’instalation de tomcat est toute fraiche. Cherchons sur internet une liste de credentials par défaut.
 Après quelques recherches nous tombons sur : [https://github.com/danielmiessler/SecLists/blob/master/Passwords/Default-Credentials/tomcat-betterdefaultpasslist.txt](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Default-Credentials/tomcat-betterdefaultpasslist.txt)
@@ -45,7 +45,7 @@ print "Found valid credentials \"" + line.strip('\n') + "\""
 raise sys.exit()
 ```
 
-![Untitled](Jsrc/Untitled%204.png)
+![Untitled](src/Untitled%204.png)
 
 Et voilà nous avons enfin les credentials de l’interface manager !
 
@@ -58,16 +58,16 @@ A partir d’ici j’utilise metasploit pour voir l’exploitation manuel je vou
 Après quelques recherches sur internet sur comment exploiter les informations que nous avions je suis tomber sur un articule parlant d’un exploit nommé : “tomcat_mgr_upload”.
 Cherchons dans metasploit si il existe.
 
-![Untitled](Jsrc/Untitled%205.png)
+![Untitled](src/Untitled%205.png)
 
 Bingo nous avons notre exploit, remplissons les champs options manquant avec les bonnes adresse IP et le bon port et en avant pour lancer l’exploitation.
 
-![Untitled](Jsrc/Untitled%206.png)
+![Untitled](src/Untitled%206.png)
 
 We are IN ! Et encore une fois aucune forme d’élévation de privilège ou de pivoting nous avons directement accès aux flags contenu dans Bureau du compte administrateur.
 
-![Untitled](Jsrc/Untitled%207.png)
+![Untitled](src/Untitled%207.png)
 
 Affichons les flags et GG!
 
-![Untitled.png](Jsrc/Untitled%208.png)
+![Untitled.png](src/Untitled%208.png)
